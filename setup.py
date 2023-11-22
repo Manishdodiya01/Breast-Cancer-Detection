@@ -1,11 +1,14 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
-    name='breast_cancer_ml_project',
+    name='your_project_name',
     version='0.1',
-    packages=['components', 'pipelines'],
+    packages=find_packages(),
     install_requires=[
+        # List your project dependencies here
+        'numpy',
         'scikit-learn',
-        'flask',
+        'pandas',
+        # Add more dependencies as needed
     ],
 )
